@@ -19,3 +19,26 @@ if (navToggle && navLinks) {
     });
   });
 }
+
+if ("IntersectionObserver" in window) {
+  const revealElements = document.querySelectorAll(
+    ".section-heading, .about-copy, .skills-panel, .project-card, .timeline-item, .cta-box",
+  );
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 },
+  );
+
+  revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+  });
+}
