@@ -787,7 +787,10 @@ body {
 
 .quality-flow {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr) 20px minmax(0, 1fr) 20px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr) 20px minmax(
+      0,
+      1fr
+    ) 20px minmax(0, 1fr);
   align-items: center;
   gap: 0.3rem;
   margin-top: 2rem;
@@ -1247,11 +1250,21 @@ body {
   animation: enter-view 650ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.hero-copy > :nth-child(1) { animation-delay: 60ms; }
-.hero-copy > :nth-child(2) { animation-delay: 140ms; }
-.hero-copy > :nth-child(3) { animation-delay: 220ms; }
-.hero-copy > :nth-child(4) { animation-delay: 300ms; }
-.hero-copy > :nth-child(5) { animation-delay: 380ms; }
+.hero-copy > :nth-child(1) {
+  animation-delay: 60ms;
+}
+.hero-copy > :nth-child(2) {
+  animation-delay: 140ms;
+}
+.hero-copy > :nth-child(3) {
+  animation-delay: 220ms;
+}
+.hero-copy > :nth-child(4) {
+  animation-delay: 300ms;
+}
+.hero-copy > :nth-child(5) {
+  animation-delay: 380ms;
+}
 
 .quality-board {
   animation-delay: 180ms;
@@ -1261,10 +1274,18 @@ body {
   animation: node-arrive 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
-.flow-node:nth-child(1) { animation-delay: 420ms; }
-.flow-node:nth-child(3) { animation-delay: 520ms; }
-.flow-node:nth-child(5) { animation-delay: 620ms; }
-.flow-node:nth-child(7) { animation-delay: 720ms; }
+.flow-node:nth-child(1) {
+  animation-delay: 420ms;
+}
+.flow-node:nth-child(3) {
+  animation-delay: 520ms;
+}
+.flow-node:nth-child(5) {
+  animation-delay: 620ms;
+}
+.flow-node:nth-child(7) {
+  animation-delay: 720ms;
+}
 
 .flow-connector {
   transform: scaleX(0);
@@ -1272,9 +1293,15 @@ body {
   animation: connector-draw 320ms ease-out both;
 }
 
-.flow-connector:nth-child(2) { animation-delay: 480ms; }
-.flow-connector:nth-child(4) { animation-delay: 580ms; }
-.flow-connector:nth-child(6) { animation-delay: 680ms; }
+.flow-connector:nth-child(2) {
+  animation-delay: 480ms;
+}
+.flow-connector:nth-child(4) {
+  animation-delay: 580ms;
+}
+.flow-connector:nth-child(6) {
+  animation-delay: 680ms;
+}
 
 .reveal {
   opacity: 0;
@@ -1290,8 +1317,12 @@ body {
   transform: translateY(0);
 }
 
-.project-card:nth-child(2) { --reveal-delay: 100ms; }
-.project-card:nth-child(3) { --reveal-delay: 200ms; }
+.project-card:nth-child(2) {
+  --reveal-delay: 100ms;
+}
+.project-card:nth-child(3) {
+  --reveal-delay: 200ms;
+}
 
 .lab-intro {
   max-width: 600px;
@@ -1348,7 +1379,10 @@ body {
 
 .browser-scene {
   background-color: #e8eee5;
-  background-image: radial-gradient(rgba(24, 51, 45, 0.16) 0.7px, transparent 0.7px);
+  background-image: radial-gradient(
+    rgba(24, 51, 45, 0.16) 0.7px,
+    transparent 0.7px
+  );
   background-size: 12px 12px;
 }
 
@@ -1383,8 +1417,12 @@ body {
   background: #e96951;
 }
 
-.browser-dots i:nth-child(2) { background: #d4b94e; }
-.browser-dots i:nth-child(3) { background: #70a66a; }
+.browser-dots i:nth-child(2) {
+  background: #d4b94e;
+}
+.browser-dots i:nth-child(3) {
+  background: #70a66a;
+}
 
 .browser-url {
   width: 70%;
@@ -1392,7 +1430,9 @@ body {
   border-radius: 2px;
   background: #edf1ec;
   color: #64766e;
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
 }
 
 .browser-content {
@@ -1413,7 +1453,9 @@ body {
 
 .browser-rail b {
   color: #e96951;
-  font: 9px "DM Mono", monospace;
+  font:
+    9px "DM Mono",
+    monospace;
 }
 
 .browser-rail i {
@@ -1430,7 +1472,9 @@ body {
 .test-title {
   margin-bottom: 7px;
   color: #18332d;
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
 }
 
 .test-progress {
@@ -1457,7 +1501,9 @@ body {
   padding: 4px 0;
   border-bottom: 1px solid #f0f2ef;
   color: #50635b;
-  font: 6.5px "DM Mono", monospace;
+  font:
+    6.5px "DM Mono",
+    monospace;
 }
 
 .test-result i {
@@ -1474,9 +1520,15 @@ body {
   animation: result-arrive 4.8s ease-in-out infinite;
 }
 
-.test-result:nth-of-type(3) i { animation-delay: 350ms; }
-.test-result:nth-of-type(4) i { animation-delay: 700ms; }
-.test-result:nth-of-type(5) i { animation-delay: 1050ms; }
+.test-result:nth-of-type(3) i {
+  animation-delay: 350ms;
+}
+.test-result:nth-of-type(4) i {
+  animation-delay: 700ms;
+}
+.test-result:nth-of-type(5) i {
+  animation-delay: 1050ms;
+}
 
 .test-result b {
   margin-left: auto;
@@ -1486,16 +1538,24 @@ body {
   animation: result-arrive 4.8s ease-in-out infinite;
 }
 
-.test-result:nth-of-type(3) b { animation-delay: 350ms; }
-.test-result:nth-of-type(4) b { animation-delay: 700ms; }
-.test-result:nth-of-type(5) b { animation-delay: 1050ms; }
+.test-result:nth-of-type(3) b {
+  animation-delay: 350ms;
+}
+.test-result:nth-of-type(4) b {
+  animation-delay: 700ms;
+}
+.test-result:nth-of-type(5) b {
+  animation-delay: 1050ms;
+}
 
 .scene-caption {
   position: absolute;
   right: 0.65rem;
   bottom: 0.55rem;
   color: rgba(255, 255, 255, 0.65);
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
   letter-spacing: 0.06em;
 }
 
@@ -1505,7 +1565,11 @@ body {
 
 .mobile-scene {
   background: #173f35;
-  background-image: linear-gradient(135deg, rgba(212, 240, 120, 0.12), transparent 55%);
+  background-image: linear-gradient(
+    135deg,
+    rgba(212, 240, 120, 0.12),
+    transparent 55%
+  );
 }
 
 .device-frame {
@@ -1543,7 +1607,9 @@ body {
   display: flex;
   justify-content: space-between;
   color: #18332d;
-  font: 5px "DM Mono", monospace;
+  font:
+    5px "DM Mono",
+    monospace;
 }
 
 .mobile-greeting {
@@ -1636,7 +1702,9 @@ body {
   display: flex;
   justify-content: space-between;
   color: #9caf9f;
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
 }
 
 .api-live {
@@ -1660,7 +1728,9 @@ body {
   margin-top: 18px;
   padding-bottom: 9px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-  font: 8px "DM Mono", monospace;
+  font:
+    8px "DM Mono",
+    monospace;
 }
 
 .api-endpoint b {
@@ -1683,12 +1753,18 @@ body {
   padding: 5px 6px;
   border-left: 2px solid transparent;
   color: #9caf9f;
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
   animation: api-line-check 4.5s ease-in-out infinite;
 }
 
-.api-row:nth-child(2) { animation-delay: 450ms; }
-.api-row:nth-child(3) { animation-delay: 900ms; }
+.api-row:nth-child(2) {
+  animation-delay: 450ms;
+}
+.api-row:nth-child(3) {
+  animation-delay: 900ms;
+}
 
 .api-row code {
   color: #edf4ea;
@@ -1707,7 +1783,9 @@ body {
   padding: 7px;
   border: 1px solid rgba(212, 240, 120, 0.25);
   background: rgba(212, 240, 120, 0.08);
-  font: 7px "DM Mono", monospace;
+  font:
+    7px "DM Mono",
+    monospace;
 }
 
 .api-response span,
@@ -1738,38 +1816,95 @@ body {
 }
 
 @keyframes suite-progress {
-  0%, 8% { transform: scaleX(0); }
-  55%, 82% { transform: scaleX(1); }
-  100% { transform: scaleX(0); }
+  0%,
+  8% {
+    transform: scaleX(0);
+  }
+  55%,
+  82% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
 }
 
 @keyframes result-arrive {
-  0%, 10% { opacity: 0; transform: scale(0.5); }
-  20%, 82% { opacity: 1; transform: scale(1); }
-  92%, 100% { opacity: 0; transform: scale(0.5); }
+  0%,
+  10% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  20%,
+  82% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  92%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 }
 
 @keyframes tap-feedback {
-  0%, 44% { opacity: 0; transform: scale(0.6); }
-  52% { opacity: 1; transform: scale(0.6); }
-  80%, 100% { opacity: 0; transform: scale(2.2); }
+  0%,
+  44% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  52% {
+    opacity: 1;
+    transform: scale(0.6);
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
 }
 
 @keyframes tap-dot {
-  0%, 49% { opacity: 0; }
-  52%, 60% { opacity: 1; }
-  64%, 100% { opacity: 0; }
+  0%,
+  49% {
+    opacity: 0;
+  }
+  52%,
+  60% {
+    opacity: 1;
+  }
+  64%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes api-line-check {
-  0%, 8% { border-left-color: transparent; background: transparent; }
-  18%, 38% { border-left-color: #d4f078; background: rgba(212, 240, 120, 0.1); }
-  50%, 100% { border-left-color: transparent; background: transparent; }
+  0%,
+  8% {
+    border-left-color: transparent;
+    background: transparent;
+  }
+  18%,
+  38% {
+    border-left-color: #d4f078;
+    background: rgba(212, 240, 120, 0.1);
+  }
+  50%,
+  100% {
+    border-left-color: transparent;
+    background: transparent;
+  }
 }
 
 @keyframes live-blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.35; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
 
 @media (max-width: 820px) {
@@ -1839,7 +1974,9 @@ body {
 }
 
 @keyframes connector-draw {
-  to { transform: scaleX(1); }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
